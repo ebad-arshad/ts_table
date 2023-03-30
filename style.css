@@ -1,0 +1,36 @@
+body {
+  background: rgb(71, 88, 208);
+  background: linear-gradient(
+    45deg,
+    rgba(71, 88, 208, 1) 0%,
+    rgba(190, 80, 192, 1) 100%
+  );
+}
+
+.thead-dark {
+  background: #000;
+  color: white;
+}
+
+.table_box {
+  margin: 10vh 10px;
+  height: 80vh;
+  overflow-y: auto;
+  background: #fff;
+  padding: 10px;
+}
+
+table {
+  background: #fff;
+  user-select: none;
+}
+
+tr {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 576px) {
+  .table_box {
+    margin: 10vh 10vw;
+  }
+}
