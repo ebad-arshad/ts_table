@@ -19,15 +19,16 @@ fetch(API_KEY)
   .then((res) => {
     res.chapters.map(
       (chapters: DataObject, index: number) =>
-        (table_body.innerHTML += `
-    <tr>
-    <th scope="row">${chapters.id}</th>
-    <td>${chapters.name_simple}</td>
-    <td>${chapters.name_arabic}</td>
-    <td>${chapters.revelation_place}</td>
-    <td>${chapters.verses_count}</td>
-    </tr>`)
+        (table_body.innerHTML += 
+          `
+          <tr>  
+            <th scope="row">${chapters.id}</th>
+            <td>${chapters.name_simple}</td>
+            <td>${chapters.name_arabic}</td>
+            <td>${chapters.revelation_place}</td>
+            <td>${chapters.verses_count}</td>
+          </tr>
+          `)
     );
-    console.log(res.chapters);
   })
   .catch((err) => console.log(err));
